@@ -10,7 +10,12 @@ import Cocoa
 
 class fruityWindow: NSWindowController {
 
-    override var windowNibName: String! {
+	
+	@IBOutlet var List: NSScrollView!
+	@IBOutlet var tableViewOutlet: NSTableView!
+	
+	
+	override var windowNibName: String! {
         return "fruityWindow"
     }
 	
@@ -19,5 +24,9 @@ class fruityWindow: NSWindowController {
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
-    
+	
+
+	
+
+	
 }
