@@ -14,6 +14,7 @@
 		C281147C2462428500E0BBEA /* fruityWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281147A2462428500E0BBEA /* fruityWindow.swift */; };
 		C281147D2462428500E0BBEA /* fruityWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C281147B2462428500E0BBEA /* fruityWindow.xib */; };
 		C2811483246263E800E0BBEA /* fruitySystemProcesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28114802462629100E0BBEA /* fruitySystemProcesses.swift */; };
+		C2A79CD72464DEF300DD6FBB /* getprocesses in Resources */ = {isa = PBXBuildFile; fileRef = C2A79CD62464DEF200DD6FBB /* getprocesses */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C281147A2462428500E0BBEA /* fruityWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruityWindow.swift; sourceTree = "<group>"; };
 		C281147B2462428500E0BBEA /* fruityWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fruityWindow.xib; sourceTree = "<group>"; };
 		C28114802462629100E0BBEA /* fruitySystemProcesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruitySystemProcesses.swift; sourceTree = "<group>"; };
+		C2A79CD62464DEF200DD6FBB /* getprocesses */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getprocesses; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			children = (
 				C2327BF624623C7A0036021C /* Fruity */,
 				C2327BF524623C7A0036021C /* Products */,
+				C2A79CD82464DF0F00DD6FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +71,16 @@
 				C281147A2462428500E0BBEA /* fruityWindow.swift */,
 				C281147B2462428500E0BBEA /* fruityWindow.xib */,
 				C28114802462629100E0BBEA /* fruitySystemProcesses.swift */,
+				C2A79CD62464DEF200DD6FBB /* getprocesses */,
 			);
 			path = Fruity;
+			sourceTree = "<group>";
+		};
+		C2A79CD82464DF0F00DD6FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +145,7 @@
 				C2327BFA24623C7C0036021C /* Assets.xcassets in Resources */,
 				C281147D2462428500E0BBEA /* fruityWindow.xib in Resources */,
 				C2327BFD24623C7C0036021C /* MainMenu.xib in Resources */,
+				C2A79CD72464DEF300DD6FBB /* getprocesses in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

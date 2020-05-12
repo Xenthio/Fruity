@@ -25,7 +25,6 @@ class fruityViewController: NSViewController {
 	@IBAction func kill(_ sender: Any) {
 		for index in tableView.selectedRowIndexes.sorted() {
 			
-			print(safeapps[index])
 			killPID((safeapps[index])["processid"]!)
 			reloadAll()
 		}
@@ -34,7 +33,7 @@ class fruityViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-		print("yo")
+		
 		
     }
 	override func viewDidAppear() {
@@ -51,11 +50,8 @@ class fruityViewController: NSViewController {
 	}
 	
 	@objc func reloadAll() {
-		print("hi")
 		safeapps = getProcesses()
-		print("process get 1 done")
 		bkup = getProcesses()
-		print("process get 2 done")
 		
 		tableView.reloadData()
 

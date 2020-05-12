@@ -71,13 +71,12 @@ func versionWarning() {
 
 func getProcesses() -> [[String:String]] {
 	var final = [[String:String]]()
-	var apps = shell(launchPath: "/bin/ps", arguments: ["-eo", "ucomm"])?.components(separatedBy: "\n");
+	var filePath = Bundle.main.resourcePath
+	var apps = shell(launchPath: "/bin/sh", arguments: [filePath! + "/getprocesses"])?.components(separatedBy: "\n");
 	apps?.removeFirst()
 	apps?.removeLast()
 	var appspid = shell(launchPath: "/bin/ps", arguments: ["-eo", "pid"])?.components(separatedBy: "\n");
-	print(appspid)
 	appspid?.removeFirst()
-	print(appspid)
 	for i in apps! {
 		if getSystemItems().contains(i) != true {
 			var a = "kool"
@@ -85,7 +84,7 @@ func getProcesses() -> [[String:String]] {
 			if appspid!.count != 0 {
 				a = appspid!.removeFirst()
 			} else {
-				a = "N/A, Try refresh."
+				a = "N/A, Try refresh. This could be the process we use to capture the apps"
 			}
 			final.append(["process" : i, "processid" : a])
 			
